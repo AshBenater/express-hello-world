@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const port = process.env.PORT || 3001;
 
-app.get("/", (req, res) => res.type('html').send(html)); // Removed the extra colon here
+app.get("/", (req, res) => res.type('html').send(html)) // Removed the extra colon here
 app.get("/health", (req, res) => {
   res.sendStatus(200);
 });
